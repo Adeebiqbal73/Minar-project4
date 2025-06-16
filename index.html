@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anime World</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #1b1b2f;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #162447;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      color: #e43f5a;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background: #1f4068;
+      padding: 10px 0;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #e43f5a;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    input[type="submit"] {
+      background: #e43f5a;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background: #f95959;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #162447;
+      color: #aaa;
+    }
+
+    /* Responsive Navigation */
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      header h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Anime World</h1>
+    <p>Your favorite place to explore anime!</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome to Anime World</h2>
+    <p>Discover amazing anime characters, storylines, and fan art. Whether you're into action, romance, or fantasy, we've got something for everyone!</p>
+  </section>
+
+  <section id="about">
+    <h2>About Anime</h2>
+    <p>Anime is a Japanese style of animation that captivates audiences with its colorful visuals, unique stories, and deep emotional experiences. From classics like Naruto to recent hits like Jujutsu Kaisen, anime is now a global sensation.</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Anime Gallery</h2>
+    <div class="gallery">
+      <img src="Demon Slayer.png" alt="Demon Slayer">
+      <img src="onepiece.png" alt="One Piece">
+      <img src="bluelocks.png" alt="Blue lock">
+      <img src="jujutsukisan.png" alt="Jujutsukisan">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="4" placeholder="Your Message" required></textarea>
+      <input type="submit" value="Send Message" />
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Anime World | Designed by Me 😊
+  </footer>
+
+</body>
+</html>
